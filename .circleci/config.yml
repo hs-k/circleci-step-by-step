@@ -47,6 +47,8 @@ workflows:
   build:
     jobs:
       - "jdk-8"
+          requires:
+            - "jdk-11"
       - "jdk-10": 
           requires:
             - "jdk-8"
